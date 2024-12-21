@@ -3,10 +3,17 @@
     padding: 2rem;
     height: 100vh;
     .service-form{
-        background-color: var(--secondarybackgroundColor);
-        padding: 25px 60px;
-        border-radius: 15px;
-        width: 100%;
+      background-color: var(--secondarybackgroundColor);
+      box-shadow: 0px 2px 21px -3px black;
+      padding: 50px 25px 60px 60px;
+      border-radius: 15px;
+      width: 70%;
+      header{
+        h2{
+          color: var(--MainColor);
+          margin-bottom: 55px;
+        }
+      }
         label{
             font-size: 24px;
             font-weight: 500;
@@ -14,7 +21,7 @@
             color: var(--ParagraphColor);
         }
         input{
-            background-color: var(--InputsbackgroundColor);
+            background-color: var(--InputsbackgroundColor) ;
             border: none;
             outline: none;
             padding: 15px 15px;

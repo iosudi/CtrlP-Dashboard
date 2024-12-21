@@ -1,6 +1,10 @@
 <section class="add-service d-flex align-items-center justify-content-center">
+    <p-toast></p-toast>
     <div class="service-form">
-        <form [formGroup]="add_service" (ngSubmit)="onSubmit()" class="d-flex flex-column gap-4">
+        <header>
+            <h2>New Service</h2>
+        </header>
+        <form [formGroup]="add_service" (ngSubmit)="onSubmit()" class="d-flex flex-column gap-5">
             <!-- <div class="d-flex flex-column gap-2">
                 <label for="id">ID</label>
                 <input type="text" id="id" formControlName="id">

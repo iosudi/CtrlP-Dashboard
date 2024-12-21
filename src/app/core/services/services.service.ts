@@ -15,7 +15,7 @@ export class ServicesService {
     return this.http.get(this.services_api + 'Get-All');
   }
 
-  addServices(service: any): Observable<any> {
+  addServices(service: FormData): Observable<any> {
     return this.http.post(this.services_api + 'add', service);
   }
 }

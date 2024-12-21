@@ -1,0 +1,77 @@
+
+.register-page{
+    background-color: var(--secondarybackgroundColor);
+
+    height: 100%;
+    .form_container{
+        background-color: var(--secondarybackgroundColor);
+        width: 40%;
+        box-shadow: 3px 2px 10px -2px black;
+        position: relative;
+        width: 100%;
+        i{
+            color: red;
+            font-size: 50px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        i:hover{
+            color: rgb(161, 0, 0);
+            font-size: 48px;
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 60px;
+            color: var(--MainColor);
+            text-align: center;
+        }
+        form{
+            .inputs{
+                padding: 12px 35px;
+                .input-feild{
+                    box-sizing: border-box;
+                    background-color: var(--InputsbackgroundColor);
+                    border-radius: 8px;
+                    padding: 10px 0px;
+                    input{
+                        font-size: 18px;
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        width: 100%;
+                        padding: 10px 0px;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .eye-icon{
+                        cursor: pointer;
+                    }
+                    &:focus-within {
+                        box-shadow: 0px 0px 6px 1px var(--backgroundColor);
+                    }
+                }
+            }
+            .submit-btn{
+                padding: 0px 35px;
+                button{
+                    background-color: var(--MainColor);
+                    color: var(--backgroundColor);
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    background-color: #ad7600;
+                }
+
+            }
+        }
+    }
+}
+  

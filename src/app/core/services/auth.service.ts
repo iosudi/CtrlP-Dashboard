@@ -8,13 +8,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private auth_api: string = 'https://ctrl-p.runasp.net/api/Auth/Login';
+  private baseurl: string = 'https://ctrl-p.runasp.net/api/Auth/';
 
   constructor(private _HttpClient: HttpClient, private router: Router) {}
 
+  // for Login
   login(userData: object): Observable<any> {
-    return this._HttpClient.post(this.auth_api, userData);
+    return this._HttpClient.post(this.baseurl + 'Login', userData);
   }
+
+  // for Register
+  register(userData: object): Observable<any> {
+    return this._HttpClient.post(this.baseurl + 'RegisterAdmin', userData);
+  }
+
   // log Out methode
   logOut() {
     localStorage.removeItem('token'); //remove token from localStorage
